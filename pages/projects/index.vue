@@ -1,0 +1,33 @@
+<template>
+    <div>
+        <Exhibit prefix="software" :slug="slug" :posts="posts" />
+    </div>
+</template>
+
+<script>
+import Exhibit from '~/components/Exhibit.vue';
+export default {
+    name: 'Software',
+    components: {
+        Exhibit,
+    },
+    props: {
+        slug: {
+            type: String,
+        },
+    },
+    async asyncData() {
+        const resolve = require.context('~/posts/', true, /\.md$/);
+        const imports = resolve
+            .keys()
+            .map((key) => {
+                const [, slug] = key.match(/\/(.+)\.md$/);
+                return Object.assign(resolve(key), { slug });
+            })
+            .filter((post) => post.attributes.category === 'project');
+        return {
+            posts: imports,
+        };
+    },
+};
+</script>
