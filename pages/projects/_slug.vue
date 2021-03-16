@@ -21,8 +21,7 @@
 
 <script>
 export default {
-    name: 'SoftwareView',
-    layout: 'zack-proser',
+    name: 'ProjectView',
     async asyncData({ params }) {
         try {
             const post = await import(`~/posts/${params.slug}.md`);

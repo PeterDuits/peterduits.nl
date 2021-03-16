@@ -1,13 +1,13 @@
 <template>
     <div>
-        <Exhibit prefix="software" :slug="slug" :posts="posts" />
+        <Exhibit prefix="project" :slug="slug" :posts="posts" />
     </div>
 </template>
 
 <script>
 import Exhibit from '~/components/Exhibit.vue';
 export default {
-    name: 'Software',
+    name: 'Project',
     components: {
         Exhibit,
     },
@@ -16,7 +16,7 @@ export default {
             type: String,
         },
     },
-    async asyncData() {
+    asyncData() {
         const resolve = require.context('~/posts/', true, /\.md$/);
         const imports = resolve
             .keys()
