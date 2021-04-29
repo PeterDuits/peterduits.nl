@@ -1,55 +1,33 @@
 <template>
-  <div>
-    <Nuxt />
-  </div>
+    <div class="default-container">
+        <div class="default-container__inner">
+            <AppHeader />
+            <Nuxt />
+        </div>
+    </div>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+<script>
+import AppHeader from '../components/layout/AppHeader';
+export default {
+    name: 'DefaultLayout',
+    components: { AppHeader },
+};
+</script>
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
+<style lang="scss">
+.default-container {
+    height: 200vh;
+    background-color: #151515;
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+    &__inner {
+        height: 200vh;
+        background-image: url('~assets/images/blob-#{random(4)}.svg'), url('~assets/images/blob-#{random(4)}.svg'),
+            url('~assets/images/blob-#{random(4)}.svg'), url('~assets/images/blob-#{random(4)}.svg');
+        background-repeat: no-repeat;
+        background-position: 5vw -5vw, 55vw 20vw, 5vw 45vw, 55vw 70vw;
+        background-size: 40vw;
+        opacity: 0.8;
+    }
 }
 </style>
