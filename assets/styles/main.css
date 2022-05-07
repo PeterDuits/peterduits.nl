@@ -1,0 +1,6 @@
+@import './normalize.css';
+@import './fonts.css';
+
+* {
+    font-family: 'PayPal Sans', sans-serif;
+}
