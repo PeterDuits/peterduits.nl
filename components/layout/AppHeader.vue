@@ -26,7 +26,7 @@ export default {
     max-width: 1024px;
     padding: 0.6rem 1.5rem;
     margin: 0 auto;
-    color: $body-1;
+    color: var(--body-1);
 
     &__logo {
         height: 40px;

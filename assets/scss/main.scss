@@ -1,1 +1,25 @@
 @import "colors";
+
+:root {
+    --primary-color: #{$primary-color};
+    --secondary-color: #{$secondary-color};
+    --tertiary-color: #{$tertiary-color};
+
+    --background-1: #{$background-1};
+    --background-2: #{$background-2};
+
+    --body-1: #{$body-1};
+    --body-2: #{$body-2};
+}
+
+.pd-dark-mode {
+    --background-1: #{$background-1--dark};
+    --background-2: #{$background-2--dark};
+
+    --body-1: #{$body-1--dark};
+    --body-2: #{$body-2--dark};
+}
+
+body {
+    background-color: var(--background-1);
+}

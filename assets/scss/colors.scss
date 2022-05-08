@@ -8,10 +8,9 @@ $background-2: #f8f8f8;
 $body-1: #494a60;
 $body-2: #6f717c;
 
-.pd-dark-mode {
-  $background-1: #1b1c22;
-  $background-2: #222430;
+// Dark mode variables
+$background-1--dark: #1b1c22;
+$background-2--dark: #222430;
 
-  $body-1: #ffffff;
-  $body-2: #c7c9da;
-}
+$body-1--dark: #ffffff;
+$body-2--dark: #c7c9da;
