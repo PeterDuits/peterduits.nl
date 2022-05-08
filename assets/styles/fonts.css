@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'PayPal Sans';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-display: swap;
     src: url('~assets/fonts/PayPal_Sans_Light.ttf') format('truetype');
 }
@@ -9,7 +9,15 @@
 @font-face {
     font-family: 'PayPal Sans';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-display: swap;
     src: url('~assets/fonts/PayPal_Sans_Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PayPal Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('~assets/fonts/PayPal_Sans_SemiBold.ttf') format('truetype');
 }
