@@ -10,6 +10,17 @@
 
     --body-1: #{$body-1};
     --body-2: #{$body-2};
+
+
+
+    --ps-gradient: linear-gradient(90deg, #{$primary-color} 0%, rgba(140, 70, 190, 1) 50%, #{$secondary-color} 100%);
+    --pt-gradient: linear-gradient(90deg, #{$primary-color} 10%, rgba(133, 146, 79, 1) 50%, #{$tertiary-color} 100%);
+
+    --sp-gradient: linear-gradient(270deg, #{$primary-color} 0%, rgba(140, 70, 190, 1) 50%, #{$secondary-color} 100%);
+    --st-gradient: linear-gradient(90deg, #{$secondary-color} 10%, rgba(24, 174, 139, 1) 50%, #{$tertiary-color} 100%);
+
+    --tp-gradient: linear-gradient(270deg, #{$primary-color} 10%, rgba(133, 146, 79, 1) 50%, #{$tertiary-color} 100%);
+    --ts-gradient: linear-gradient(270deg, #{$secondary-color} 10%, rgba(24, 174, 139, 1) 50%, #{$tertiary-color} 100%);
 }
 
 .pd-dark-mode {
