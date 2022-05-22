@@ -1,17 +1,18 @@
 @import "colors";
 
 :root {
-    --primary-color: #{$primary-color};
-    --secondary-color: #{$secondary-color};
-    --tertiary-color: #{$tertiary-color};
+    --primary: #{$primary-color};
+    --primary-contrast: #{$primary-contrast-color};
+    --secondary: #{$secondary-color};
+    --secondary-contrast: #{$secondary-contrast-color};
+    --tertiary: #{$tertiary-color};
+    --tertiary-contrast: #{$tertiary-contrast-color};
 
     --background-1: #{$background-1};
     --background-2: #{$background-2};
 
     --body-1: #{$body-1};
     --body-2: #{$body-2};
-
-
 
     --ps-gradient: linear-gradient(90deg, #{$primary-color} 0%, rgba(140, 70, 190, 1) 50%, #{$secondary-color} 100%);
     --pt-gradient: linear-gradient(90deg, #{$primary-color} 10%, rgba(133, 146, 79, 1) 50%, #{$tertiary-color} 100%);

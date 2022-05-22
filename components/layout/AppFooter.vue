@@ -73,24 +73,24 @@ export default {
         margin-right: 10px;
         padding: 10px;
         border-radius: 50%;
-        background-color: var(--secondary-color);
+        background-color: var(--secondary);
         cursor: pointer;
         transition: all 0.5s;
 
         &:hover {
-            box-shadow: var(--secondary-color) 0 1px 20px;
+            box-shadow: var(--secondary) 0 1px 20px;
             transition-duration: 0.2s;
         }
     }
     &__social-image {
-        height: 20px;
-        width: 20px;
+        height: 22px;
+        width: 22px;
 
         g circle,
         g rect,
         g path,
         path {
-            fill: var(--background-1);
+            fill: var(--secondary-contrast);
         }
     }
 }
